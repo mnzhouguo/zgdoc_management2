@@ -1,0 +1,15 @@
+{
+  "name": "zgdoc_management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "zhouguo <378046836@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.49"
+  },
+
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
