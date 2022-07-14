@@ -5,7 +5,7 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 
 module.exports = {
     lang: 'zh-CN',
-    title: '你好， VuePress ！',
+    title: '攀岩飞鱼技术体系',
     description: '这是我的第一个 VuePress 站点',
 
     theme: defaultTheme({
