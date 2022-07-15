@@ -12,7 +12,7 @@
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           # 用户名与密码
-          TARGET_REPO: mnzhouguo/repo
+          TARGET_REPO: mnzhouguo/Zg5561618
           TARGET_BRANCH: master
           BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist/
