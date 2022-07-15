@@ -136,12 +136,6 @@ export const searchIndex = [
             "children": []
           }
         ]
-      },
-      {
-        "level": 2,
-        "title": "6. 参考文档",
-        "slug": "_6-参考文档",
-        "children": []
       }
     ],
     "path": "/",
