@@ -299,3 +299,6 @@ git config --global http.sslVerify "false"
 根据我们所了解到的，windows对于进程的同步互斥管理，是有资源上锁机制的。猜测这里肯定是有进程对某资源进行了加锁，但是由于进程突然崩溃，未来得及解锁，导致其他进程访问不了。
 
 根据提示，打开文件夹选项，打开显示隐藏文件，进入工作区目录下的隐藏文件.git，其中的index.lock文件删除掉;
+
+
+https://www.pudn.com/news/628351af3b39c078242ddbd5.html
