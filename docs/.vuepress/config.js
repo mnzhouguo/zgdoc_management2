@@ -5,7 +5,7 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 
 module.exports = {
     // 配置根目录
-    base:'./',
+    base:'zgdoc_management2',
     // dest: './dist',   
     lang: 'zh-CN',
     title: '攀岩飞鱼技术体系',
