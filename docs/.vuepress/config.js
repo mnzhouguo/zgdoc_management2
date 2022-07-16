@@ -5,7 +5,8 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 
 module.exports = {
     // 配置根目录
-    // base:'docs', 
+    base:'./',
+    // dest: './dist',   
     lang: 'zh-CN',
     title: '攀岩飞鱼技术体系',
     description: '这是我的第一个 VuePress 站点',
