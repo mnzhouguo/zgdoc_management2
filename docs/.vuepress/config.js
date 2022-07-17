@@ -104,7 +104,7 @@ module.exports = {
     editLinkText: '在GitHub中编辑',
 
     // 添加导航栏
-    nav: [{
+    navbar: [{
       text: '首页',
       link: '/'
     }, {
