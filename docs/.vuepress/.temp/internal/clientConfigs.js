@@ -5,7 +5,6 @@ import clientConfig3 from 'D:/code/doc/zgdoc_management/node_modules/@vuepress/p
 import clientConfig4 from 'D:/code/doc/zgdoc_management/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig5 from 'D:/code/doc/zgdoc_management/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig6 from 'D:/code/doc/zgdoc_management/node_modules/@vuepress/theme-default/lib/client/config.js'
-import clientConfig7 from 'D:/code/doc/zgdoc_management/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -15,5 +14,4 @@ export const clientConfigs = [
   clientConfig4,
   clientConfig5,
   clientConfig6,
-  clientConfig7,
 ]

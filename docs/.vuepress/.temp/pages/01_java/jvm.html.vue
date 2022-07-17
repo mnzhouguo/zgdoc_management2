@@ -1,3 +1,3 @@
-<template><div><h2 id="一级标题" tabindex="-1"><a class="header-anchor" href="#一级标题" aria-hidden="true">#</a> 一级标题</h2>
+<template><div><h2 id="一级标题" tabindex="-1">一级标题</h2>
 <p>JVM测试</p>
 </div></template>

@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/zgdoc_management2/\",\"lang\":\"zh-CN\",\"title\":\"攀岩飞鱼技术体系\",\"description\":\"这是我的第一个 VuePress 站点\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/zgdoc_management2/\",\"lang\":\"en-US\",\"title\":\"攀岩飞鱼技术体系\",\"description\":\"构建可靠的大型分布式系统\",\"head\":[[\"link\",{\"rel\":\"shortcut icon\",\"type\":\"image/x-icon\",\"href\":\"/favicon.ico\"}]],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

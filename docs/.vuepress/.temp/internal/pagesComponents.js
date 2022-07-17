@@ -7,6 +7,8 @@ export const pagesComponents = {
   "v-9349fd40": defineAsyncComponent(() => import(/* webpackChunkName: "v-9349fd40" */"D:/code/doc/zgdoc_management/docs/.vuepress/.temp/pages/01_java/jvm.html.vue")),
   // path: /09_tools/git_skill.html
   "v-81424074": defineAsyncComponent(() => import(/* webpackChunkName: "v-81424074" */"D:/code/doc/zgdoc_management/docs/.vuepress/.temp/pages/09_tools/git_skill.html.vue")),
+  // path: /09_tools/markdonw_skill.html
+  "v-41d4e6d5": defineAsyncComponent(() => import(/* webpackChunkName: "v-41d4e6d5" */"D:/code/doc/zgdoc_management/docs/.vuepress/.temp/pages/09_tools/markdonw_skill.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/code/doc/zgdoc_management/docs/.vuepress/.temp/pages/404.html.vue")),
 }

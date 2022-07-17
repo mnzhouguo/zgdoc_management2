@@ -350,7 +350,7 @@
     "ts-debounce" "^4.0.0"
     "vue" "^3.2.37"
 
-"@vuepress/plugin-container@2.0.0-beta.49":
+"@vuepress/plugin-container@^2.0.0-beta.49", "@vuepress/plugin-container@2.0.0-beta.49":
   "integrity" "sha512-PWChjwDVci4UMrzT4z4eYooXikf60+PseMuUioLF5lB6/6AYfL5QrzXOq7znRtG/IXtE8jIjid962eFJDvw/iA=="
   "resolved" "https://registry.npmjs.org/@vuepress/plugin-container/-/plugin-container-2.0.0-beta.49.tgz"
   "version" "2.0.0-beta.49"

@@ -5,13 +5,13 @@
   "author": "zhouguo <378046836@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-container": "^2.0.0-beta.49",
     "@vuepress/plugin-search": "^2.0.0-beta.49",
     "vuepress": "^2.0.0-beta.49"
   },
-
   "scripts": {
-   "docs:dev": "vuepress dev docs",
-   "docs:build": "vuepress build docs",
-   "deploy": "bash deploy.sh"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   }
 }
