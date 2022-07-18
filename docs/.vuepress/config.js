@@ -5,7 +5,8 @@ module.exports = {
   lang: 'zh-CN',
   title: '攀岩飞鱼技术体系',
   description: '构建程序员个人全栈知识体系',
-
+  sidebarDepth: 3,
+  
   theme: defaultTheme({
     base:'/zgdoc_management',
     logo: '/images/logo.png',
