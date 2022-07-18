@@ -70,7 +70,7 @@ x=0 时 sign(x)=0
 
 ### 4.3. exp函数 自然常数
 一篇关于exp自然常数的说明很不错的文件，重点讲了自然数e的来源，以及怎样跟我们现实案例联系起来的。
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657437820&idx=1&sn=bfd42d16119830f609eb754f03a38270&chksm=bdd95f6d8aaed67ba4aecffc897e0b19accfd618074811296b24739c5b77d064817b50800579&mpshare=1&scene=1&srcid=0518EM9BRpZHAvgl7eBZimYW#rd
+> https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657437820&idx=1&
 
 ### 4.4. 霍夫丁不等式（Hoeffding）
 
