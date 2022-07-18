@@ -21,6 +21,7 @@ yarn-error.log*
 *.apk
 *.zip
 
+
 # Editor directories and files
 .idea
 .vscode
