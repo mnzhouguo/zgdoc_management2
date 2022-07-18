@@ -32,3 +32,4 @@ yarn-error.log*
 .temp
 temp
 
+/docs/03_tools/git_skill.md
