@@ -19,7 +19,7 @@
 - [5. 常见问题](#5-常见问题)
   - [5.1. git Failed to connect to github.com port 443](#51-git-failed-to-connect-to-githubcom-port-443)
   - [5.2. error: src refspec main does not match any](#52-error-src-refspec-main-does-not-match-any)
-  - [5.3. error: failed to push some refs to <url>](#53-error-failed-to-push-some-refs-to-url)
+  - [5.3. error: failed to push some refs to](#53-error-failed-to-push-some-refs-to)
   - [5.4. OpenSSL SSL_read: Connection was reset, errno 10054](#54-openssl-ssl_read-connection-was-reset-errno-10054)
   - [5.5. fatal: Couldn't find remote ref master](#55-fatal-couldnt-find-remote-ref-master)
   - [Another git process seems to be running in this repository](#another-git-process-seems-to-be-running-in-this-repository)
@@ -182,7 +182,7 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 - 利用git clone url命令，将需要的项目从github上clone下来；
   
   ```shell
-  git clone <url>  --url为github中的git地址
+  git clone  --url为github中的git地址
   ```
 
 ### 4.4. 本地仓库提交到GitHub
@@ -277,7 +277,7 @@ git pull
 -[2] to include in what will be committed
 ### 5.2. error: src refspec main does not match any
 
-### 5.3. error: failed to push some refs to <url>
+### 5.3. error: failed to push some refs to 
 **产生原因：**
 
 When multiple developers work on the same branch, it can cause a sequencing issue in Git. A commit gets rejected and causes a failed to push some refs to error because the remote branch contains code that you do not have locally. What this means is that your local git repository is not compatible with the remote origin.
