@@ -1,44 +1,24 @@
-**目录结构**
 [[toc]]
-
-- [1. 概述](#1-概述)
-- [2. 核心概念](#2-核心概念)
-- [3. 底层原理](#3-底层原理)
-  - [3.1. 目录结构](#31-目录结构)
-  - [3.2. 状态模型](#32-状态模型)
-  - [3.3. 存储模型](#33-存储模型)
-  - [3.4. 分支管理](#34-分支管理)
-- [4. 使用实践](#4-使用实践)
-  - [4.1. git安装与配置](#41-git安装与配置)
-  - [4.2. SSH远程访问](#42-ssh远程访问)
-  - [4.3. 远程仓库clone到本地](#43-远程仓库clone到本地)
-  - [4.4. 本地仓库提交到GitHub](#44-本地仓库提交到github)
-  - [4.5. 常用命令](#45-常用命令)
-  - [4.6. 获取远程更新](#46-获取远程更新)
-  - [4.7. 基于master创建新分支](#47-基于master创建新分支)
-- [5. 常见问题](#5-常见问题)
-  - [5.1. git Failed to connect to github.com port 443](#51-git-failed-to-connect-to-githubcom-port-443)
-  - [5.2. error: src refspec main does not match any](#52-error-src-refspec-main-does-not-match-any)
-  - [5.3. error: failed to push some refs to](#53-error-failed-to-push-some-refs-to)
-  - [5.4. OpenSSL SSL_read: Connection was reset, errno 10054](#54-openssl-ssl_read-connection-was-reset-errno-10054)
-  - [5.5. fatal: Couldn't find remote ref master](#55-fatal-couldnt-find-remote-ref-master)
-  - [Another git process seems to be running in this repository](#another-git-process-seems-to-be-running-in-this-repository)
-- [6. 参考文档](#6-参考文档)
 
 ## 1. 概述
 
 Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Linux内核的最早作者)开发设计的，就对它肃然起敬了，在同类工具中算是一骑绝尘，Git凭借着优雅的设计、丰富的功能、简单的操作，极高的性能，力压其他工具成为市场占有率最高的工具，也是程序员群体必备的、使用最频繁的工具；
 
 但是，对于大部分程序员，平时的使用场景可能都只是在各个插件之上，进行简单的提交，合并等操作。而对于初学着会对git的命令感到困惑，一般使用死记硬背的方式去学习，这样导致一旦长时间不用就会忘记，或者出现一些异常情况就不知道如何处理。
-究其原因，主要是因为对Git的底层原理与设计不了解，这好比：不了JVM的原理进行虚拟机调优，不了解myslq索引的原理进行索引优化一样；
+
+> 究其原因，主要是因为对Git的底层原理与设计不了解，这好比：不了JVM的原理进行虚拟机调优，不了解myslq索引的原理进行索引优化一样；
 
 因此，这篇文章我们从Git的一些核心概念与底层原理发出，带领大家对Git有一个深入的、全面的了解，然后再针对实际开发过程中使用最频繁的操作做一些总结，最后我们会针对Git的一些高级、同时对效率有极大提升的功能进行说明，希望通过这篇文章让大家对Git从里到外、从原理到实践有一个全面的认识，最终是提高我们的研发效能；
 
 ## 2. 核心概念
 
-* Git在本机的文件系统之上构建一个小的文件系统。这个小型的文件系统就是 **.git/objects**目录；
-- Git中的所有操作，都是通过内部定义的4种类型的对象来实现（" **blob**"、" **tree**"、 " **commit**" 和" **tag**"）
-- Git记录了每次提交，每个文件的全部内容（snapshot快照）；
+1. Git在本机的文件系统之上构建一个小的文件系统。这个小型的文件系统就是 **.git/objects**目录；
+  
+2. Git中的所有操作，都是通过内部定义的4种类型的对象来实现（" **blob**"、" **tree**"、 " **commit**" 和" **tag**"）
+  
+3. Git记录了每次提交，每个文件的全部内容（snapshot快照）；
+
+4. 测试
 
 ## 3. 底层原理
 
@@ -50,7 +30,7 @@ Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Li
 <img src="images/image-20220711224524701.png" style="zoom:70%;" />
 ```
 
-**Git目录**
+- Git目录
 
 Git目录是项目存储所有历史和元信息的目录 - 包括所有的对象(***commits,trees,blobs,tags***)，每一个项目只能有一个'Git目录，下面我们来具体看看Git目录中有哪些信息；
 
@@ -96,9 +76,7 @@ refs目录下面是一些纯文本文件，分别记录着本地分支和远程�
 
 下图描述了 git 对象的在不同的生命周期中不同的存储位置，通过不同的 git 命令改变 git 对象的存储生命周期
 
-```
 <img src="git_status.svg" style="zoom:100%;" />
-```
 
 **工作区 (workspace)**
 就是我们当前工作空间，也就是我们当前能在本地文件夹下面看到的文件结构。初始化工作空间或者工作空间 clean 的时候，文件内容和 index 暂存区是一致的，随着修改，工作区文件在没有 add 到暂存区时候，工作区将和暂存区是不一致的；
@@ -133,13 +111,9 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 - 一个tree对象关联者一串(bunch)blob对象或是其它tree对象的指针;
 - tree对象存储的是指针（tree和blob的SHA哈希值）并不存储真正的对象数据；
 
-
 **commit：** 标识某个时间点的状态，内容包括：时间点元数据，提交作者等，一个commit指向一个tree；
 
 > commint对象是我们接触得最频繁的对象，我们一般使用的commit命令（merge，pull、push等等）都直接与commit对象打交道；
-
-
-
 
 - tree对象： 标识者commit对象中涉及的相关tree对象（tree对象最终关联着blod对象，而blod对象由实际文件生成）；
 
@@ -166,7 +140,6 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 
 **第一步：使用git bash生成秘钥**
 使用 ssh-keygen -t rsa 命令生成证书文件及密钥(信息中包含你的git用户和邮箱)
-
 
 **第二步：将密钥加到[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)的setting中SSH Keys中**
 
@@ -307,7 +280,7 @@ git config --global http.sslVerify "false"
 
 ### 5.5. fatal: Couldn't find remote ref master
 
-### Another git process seems to be running in this repository
+### 5.6. Another git process seems to be running in this repository
 
 根据我们所了解到的，windows对于进程的同步互斥管理，是有资源上锁机制的。猜测这里肯定是有进程对某资源进行了加锁，但是由于进程突然崩溃，未来得及解锁，导致其他进程访问不了。
 
@@ -317,3 +290,4 @@ git config --global http.sslVerify "false"
 
 <https://blog.csdn.net/qq_37808895/article/details/90733824>
 [Git - Git 对象 (git-scm.com)](https://git-scm.com/book/zh/v2/Git-内部原理-Git-对象)
+
