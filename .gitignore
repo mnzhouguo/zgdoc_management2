@@ -31,5 +31,3 @@ yarn-error.log*
 .temp
 temp
 
-/docs/.vuepress/.temp
-docs/.vuepress/.temp/pages/index.html.vue
