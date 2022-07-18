@@ -1,0 +1,70 @@
+<mxfile host="65bd71144e">
+    <diagram id="C18fwr6B2REJ1pkVPgu3" name="MindSpore构建AI生态">
+        <mxGraphModel dx="1054" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-12" value="服务类型" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fontSize=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="580" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-2" value="推理" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="630" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-3" value="训练" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="630" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-7" value="算力" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="580" width="20" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-36" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="530" y="580" width="290" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-5" value="算力卡" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="gkswfJN2HC2qifhLRj1S-36" vertex="1">
+                    <mxGeometry width="89.99999999999999" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-10" value="服务器" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="gkswfJN2HC2qifhLRj1S-36" vertex="1">
+                    <mxGeometry x="105" width="89.99999999999999" height="90" as="geometry"/>
+                </mxCell>
+                <UserObject label="服务器集群" tags="eee" id="gkswfJN2HC2qifhLRj1S-11">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="gkswfJN2HC2qifhLRj1S-36" vertex="1">
+                        <mxGeometry x="220" width="70" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-13" value="底层元素" parent="0"/>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-15" value="场景" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=20;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="175" y="240" width="20" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-19" value="&lt;div style=&quot;font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;AI开发平台&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="230" y="370" width="590" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-20" value="&lt;div style=&quot;font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;行业AI转型咨询服务/定制化服务&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;align=center;fontColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="230" y="300" width="590" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-21" value="&lt;div style=&quot;font-size: 14px; line-height: 19px;&quot;&gt;&lt;b&gt;MindSpore&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;verticalAlign=top;fillColor=#ffcccc;fillStyle=hachure;strokeColor=#36393d;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="230" y="450" width="590" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-22" value="开发套件" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fontFamily=Helvetica;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="270" y="490" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-23" value="ModelHub" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fontFamily=Helvetica;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="460" y="490" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-24" value="ModelZoo（）" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fontFamily=Helvetica;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="680" y="490" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-25" value="&lt;h6 style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#000000&quot;&gt;行业应用（金融，能源、交通、制造等）&lt;/font&gt;&lt;/span&gt;&lt;/h6&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;align=center;fontColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="230" y="230" width="590" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-28" value="算法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=20;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="175" y="450" width="20" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-29" value="平台" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;fontSize=20;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="175" y="350" width="20" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkswfJN2HC2qifhLRj1S-38" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;sketch=1;fillStyle=hachure;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=default;fillColor=default;" parent="gkswfJN2HC2qifhLRj1S-13" vertex="1">
+                    <mxGeometry x="200" y="235" width="20" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
