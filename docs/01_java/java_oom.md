@@ -168,7 +168,7 @@ PS Old Generation
 
 > 命令 ：`jvm`
 
-**jvm能查看的重点信息**
+jvm能查看的重点信息
 
 **1、类加载信息**
 ![image-20220624102508954](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624102508954.png)
