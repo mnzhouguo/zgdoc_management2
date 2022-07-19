@@ -1,11 +1,13 @@
 
-<!-- # 1. Java性能优化与实践 -->
+# Java性能优化与实践
 
 ## 1. 目标与思路
 
+### 运行架构背景
+
 所谓运行架构是指一个系统运作逻辑，以及背后的原理，其关注的是系统的某个局部，或者瞬间。比如：
 
-* 服务注册与发现具体是如何运作 ？
+* 服务注册与发现具体是如何运作？
 
 * 流量控制与服务熔断链路跟踪是如何运作的？
 
@@ -19,7 +21,11 @@
 
 * 其次，作为一个技术人，面对当前浩如烟海的技术，框架，，要构建自己的技术知识体系，那具体要如何构建呢？根据我们个人的经验，一个比较有效的方法就是，对一个问题或技术要深究其原理，当我们深入研究的问题多了。
 
-因为，<font color='red'>**本次的分享主要基于一个案例来了解java，内存模型，垃圾回收，线程池等几个基础问题；**</font>
+![图-微服务技术体系](./drawio/microservices_architecture.drawio.svg)
+
+### 为什么要讲JVM相关的内容？
+
+因为，**<font color='red'>本次的分享主要基于一个案例来了解java，内存模型，垃圾回收，线程池等几个基础问题；</font>**
 
 ## 2. 环境说明
 
@@ -48,7 +54,7 @@ public String threadLocalVariable() {
 }
 ```
 
-### 2.4. Java运行参数
+### 2.4. 运行参数
 
 * 后台运行
 
@@ -96,11 +102,10 @@ public String threadLocalVariable() {
 
 ### 2.5. 模拟访问
 
-## 3. 运行异常(表象)
-
 * 通过Jmeter测试工具，模拟并发访问，模拟300个并发请求；
-
   ![image-20220630151151474](D:\mnzho\Pictures\Saved Pictures\typora\image-20220630151151474.png)
+
+## 3. 运行异常(表象)
 
 ### 3.1. 异常监控
 
@@ -153,7 +158,7 @@ PS Old Generation
 
 #### 4.1.2. arthas-dashboard查看
 
-**查看整体监控面板**
+> 查看整体监控面板
 
 命令：`dashboard`
 
@@ -265,14 +270,11 @@ PS Old Generation
 
 ### 5.1. JVM 内存分布
 
-**JVM内存模型**
+> JVM内存模型
 
-> 【金山文档】 JVM专题2
-> <https://kdocs.cn/l/ck2IjBo1slkF>
+[JVM专题2](https://kdocs.cn/l/ck2IjBo1slkF)
 
-****
-
-**使用查看初始JVM情况**
+> 使用查看初始JVM情况
 
 `jmap -heap 1728`
 
@@ -408,23 +410,18 @@ Parallel GC 是JDK8默认（-XX:+UseParallelGC）的垃圾回收算法，Paralle
 
 ### 5.2. GC垃圾回收机制
 
-> 【金山文档】 垃圾回收算法
-> <https://kdocs.cn/l/cvywFXk3XQ2N>
-
+* 垃圾回收算法
 [图解Java垃圾回收算法及详细过程！_Java_攀岩鱼_InfoQ写作社区](https://xie.infoq.cn/article/9d4830f6c0c1e2df0753f9858)
 
 ### 5.3. 线程本地变量机制
 
-【金山文档】 线程本地变量
-<https://kdocs.cn/l/cocwVqCovk6m>
+* 线程本地变量
+[线程本地变量执行原型](https://kdocs.cn/l/cocwVqCovk6m)
 
 ### 5.4. 线程池模型
 
-【金山文档】 线程池运行原理-Tomact
-<https://kdocs.cn/l/coExE9ROAPvR>
-
-【金山文档】 线程池运行原理AQS-JDK
-<https://kdocs.cn/l/ckomqAI27ysx>
+[线程池运行原理-Tomact](https://kdocs.cn/l/coExE9ROAPvR)
+[线程池运行原理AQS-JDK](https://kdocs.cn/l/ckomqAI27ysx)
 
 ## 6. 总结
 
@@ -434,22 +431,21 @@ Parallel GC 是JDK8默认（-XX:+UseParallelGC）的垃圾回收算法，Paralle
 ## 7. 参考资料
 
 * Oracle 标准的HotSpot虚拟机垃圾回收调优指南
-
-​         [Java Platform, Standard Edition HotSpot Virtual Machine Garbage Collection Tuning Guide, Release 8 (oracle.com)](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html)
+[Java Platform, Standard Edition HotSpot Virtual Machine Garbage Collection Tuning Guide, Release 8 (oracle.com)](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html)
 
 * JVM参数优化
-
-​       [7 JVM arguments of Highly Effective Applications – GC easy – Universal Java GC Log Analyser](https://blog.gceasy.io/2020/03/18/7-jvm-arguments-of-highly-effective-applications/)
+[7 JVM arguments of Highly Effective Applications – GC easy – Universal Java GC Log Analyser](https://blog.gceasy.io/2020/03/18/7-jvm-arguments-of-highly-effective-applications/)
 
 * 极客时间-Java性能调优课程
+  
 * 周志明《Java虚拟机第三版》
+  
 * 周志明《凤凰架构》
-
-​       [凤凰架构：构筑可靠的大型分布式系统 | 凤凰架构 (icyfenix.cn)](http://icyfenix.cn/)
+[凤凰架构：构筑可靠的大型分布式系统 | 凤凰架构 (icyfenix.cn)](http://icyfenix.cn/)
 
 ## 8. 后续改进
 
 * 需要有一个整体的运行架构总图作为导入，告诉读者为什么要先讲JVM相关内容，后续的内容是如何规划的：
-* 最好先介绍原理，后介绍案例，再结合原理与案例进行系统总结；
+* 最好先介绍原理后介绍案例，再结合原理与案例进行系统总结；
 * 所有介绍的内容的文档、代码，图形需要规范化的整理与同步输出，要给读者开箱即用的便捷性；
 * 视频录制的方式最好以小微课的形式呈现，不在意多而在于精；
