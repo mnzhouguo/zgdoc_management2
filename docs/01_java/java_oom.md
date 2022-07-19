@@ -103,7 +103,7 @@ public String threadLocalVariable() {
 ### 2.5. 模拟访问
 
 * 通过Jmeter测试工具，模拟并发访问，模拟300个并发请求；
-  ![image-20220630151151474](D:\mnzho\Pictures\Saved Pictures\typora\image-20220630151151474.png)
+  ![图-20220630151151474](D:\mnzho\Pictures\Saved Pictures\typora\image-20220630151151474.png)
 
 ## 3. 运行异常(表象)
 
@@ -182,8 +182,6 @@ jvm能查看的重点信息
 
 **4、内存管理与内存**
 
-<!-- ![image-20220624103239744](C:\Users\mnzho\AppData\Roaming\Typora\typora-user-images\image-20220624103239744.png) -->
-
 *参数说明：*
 
 * HEAP-MEMORY-USAGE ：堆内存初始化大小
@@ -222,7 +220,7 @@ jvm能查看的重点信息
 
 > 使用jmap命令，查看具体的堆内对象，live参数只显示存活对象；
 
-![image-20220624140624691](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624140624691.png)
+![image-1](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624140624691.png)
 
 ### 4.3. 堆文件信息分析
 
@@ -230,7 +228,7 @@ jvm能查看的重点信息
 
 * 1、java程序启启动时指定OOM异常时输出hprof文件
 
-​        `-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/heapdump.hprof`
+ `-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/heapdump.hprof`
 
 * 2、使用 jconsole或VisualVM等工具在运行时获得堆转储生成hprof文件
 
