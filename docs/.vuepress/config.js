@@ -1,7 +1,7 @@
 const { defaultTheme } = require('vuepress')
 
 module.exports = {
-  base: '/zgdoc_management',
+  base: 'zgdoc_management',
   lang: 'zh-CN',
   title: '攀岩飞鱼技术体系',
   description: '构建程序员个人全栈知识体系',
