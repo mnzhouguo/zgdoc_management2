@@ -42,7 +42,7 @@
 
 ### 2.3. 模拟代码
 
-![image-20220630095650450](D:\mnzho\Pictures\Saved Pictures\typora\image-20220630095650450.png)
+![image-20220630095650450](./images/image-20220630095650450.png)
 
 ```java
 @RequestMapping(value = "/threadLocalVariable")
@@ -103,7 +103,7 @@ public String threadLocalVariable() {
 ### 2.5. 模拟访问
 
 * 通过Jmeter测试工具，模拟并发访问，模拟300个并发请求；
-  ![图-20220630151151474](D:\mnzho\Pictures\Saved Pictures\typora\image-20220630151151474.png)
+  ![图-20220630151151474](./images/image-20220630151151474.png)
 
 ## 3. 运行异常(表象)
 
@@ -111,13 +111,13 @@ public String threadLocalVariable() {
 
 ### 3.2. 控制台OOM异常
 
-![image-20220623113819556](D:\mnzho\Pictures\Saved Pictures\typora\image-20220623113819556.png)
+![image-20220623113819556](./images/image-20220623113819556.png)
 
 ### 3.3. Jmeter异常返回
 
-![image-20220623120603941](D:\mnzho\Pictures\Saved Pictures\typora\image-20220623120603941.png)
+![image-20220623120603941](./images/image-20220623120603941.png)
 
-![image-20220623120733881](D:\mnzho\Pictures\Saved Pictures\typora\image-20220623120733881.png)
+![image-20220623120733881](./images/image-20220623120733881.png)
 
 ​                                                    接口异常
 
@@ -162,7 +162,7 @@ PS Old Generation
 
 命令：`dashboard`
 
-![image-20220623155835963](D:\mnzho\Pictures\Saved Pictures\typora\image-20220623155835963.png)
+![image-20220623155835963](./images/image-20220623155835963.png)
 
 #### 4.1.3. arthas-jvm查看
 
@@ -171,14 +171,14 @@ PS Old Generation
 jvm能查看的重点信息
 
 **1、类加载信息**
-![image-20220624102508954](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624102508954.png)
+![image-20220624102508954](./images/image-20220624102508954.png)
 
 **2、编译信息**
-![image-20220624102747767](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624102747767.png)
+![image-20220624102747767](./images/image-20220624102747767.png)
 
 **3、垃圾回收情况**
 
-![image-20220624103021013](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624103021013.png)
+![image-20220624103021013](./images/image-20220624103021013.png)
 
 **4、内存管理与内存**
 
@@ -188,7 +188,7 @@ jvm能查看的重点信息
 
 **5、线性信息**
 
-![image-20220624103831880](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624103831880.png)
+![image-20220624103831880](./images/image-20220624103831880.png)
 
 *参数说明：*
 
@@ -204,7 +204,7 @@ jvm能查看的重点信息
 
 **5、文件描述符相关**
 
-![image-20220624104250512](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624104250512.png)
+![image-20220624104250512](./images/image-20220624104250512.png)
 
 *参数说明：*
 
@@ -220,7 +220,7 @@ jvm能查看的重点信息
 
 > 使用jmap命令，查看具体的堆内对象，live参数只显示存活对象；
 
-![image-1](D:\mnzho\Pictures\Saved Pictures\typora\image-20220624140624691.png)
+![image-1](./images/image-20220624140624691.png)
 
 ### 4.3. 堆文件信息分析
 
@@ -260,7 +260,7 @@ jvm能查看的重点信息
 
 **Full GC变得非常频繁，并且**
 
-![image-20220623122656938](D:\mnzho\Pictures\Saved Pictures\typora\image-20220623122656938.png)
+![image-20220623122656938](./images/image-20220623122656938.png)
 
 > 使用在线工具gceasy分析GC日志
 
