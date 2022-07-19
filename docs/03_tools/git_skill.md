@@ -2,22 +2,24 @@
 
 ## 1. 概述
 
-Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Linux内核的最早作者)开发设计的，就对它肃然起敬了，在同类工具中算是一骑绝尘。
+Git作为一个版本管理工具，在同类工具中算是一骑绝尘，只要我们听到它是由Linus Torvalds大神(**Linux内核的最早作者**)开发设计的，就对它肃然起敬了；
 
-Git凭借着优雅的设计、丰富的功能、简单的操作，极高的性能，力压其他工具成为市场占有率最高的工具，也是程序员群体必备的、使用最频繁的工具；
+Git凭借着**优雅的设计、丰富的功能、简单的操作，极高的性能**，力压其他工具成为市场占有率最高的代码管理工具。同时Git也是程序员群体必备的、使用最频繁的工具；
 
-但是，对于大部分程序员，平时的使用场景可能都只是在各个插件之上，进行简单的提交，合并等操作。而对于初学着会对git的命令感到困惑，一般使用死记硬背的方式去学习，这样导致一旦长时间不用就会忘记，或者出现一些异常情况就不知道如何处理。
+但是，对于大部分程序员，平时的使用场景可能都只是在各个插件之上，进行简单的提交，合并等操作。而对于初学着会对git的命令感到困惑，一般使用死记硬背的方式去学习，**这样导致一旦长时间不用就会忘记**，或者出现一些异常情况就不知道如何处理；
 
 <!-- 描述原理 -->
-究其原因，主要是因为对Git的底层原理与设计不了解，这好比：不了JVM的原理进行虚拟机调优，不了解myslq索引的原理进行索引优化一样，因此，这篇文章我们从Git的一些核心概念与底层原理发出，带领大家对Git有一个深入的、全面的了解，然后再针对实际开发过程中使用最频繁的操作做一些总结；
+究其原因，主要是因为对Git的底层原理与设计不了解，这好比：不了JVM的原理进行虚拟机调优，不了解myslq索引的原理进行索引优化一样，因此，这**篇文章我们从Git的一些核**心概念与底层原理发出，带领大家对Git有一个深入的、全面的了解，然后再针对实际开发过程中使用最频繁的操作做一些总结；
 
-最后我们会针对Git的一些高级、同时对效率有极大提升的功能进行说明，希望通过这篇文章让大家对Git从里到外、从原理到实践有一个全面的认识，最终是提高我们的研发效能；
+最后我们会针对Git的一些高级、同时对效率有极大提升的功能进行说明，希望通过**这篇文章让大家对Git从**里到外、从原理到实践有一个全面的认识，最终是提高我们的研发效能；
 
 ## 2. 核心概念
 
-1. Git在本机的文件系统之上构建一个小的文件系统，既**.git/objects**目录;
-2. Git中的所有操作，都是基于4种类型的对象来实现（" **blob**"、" **tree**"、 " **commit**" 和" **tag**"）;
-3. Git记录了每次提交，每个文件的全部内容（snapshot快照）;
+* <font color=orange> 1.Git在本机的文件系统之上构建一个小的文件系统，既:.git/objects目录; </font>
+
+* <font color=orange> 2.Git中的所有操作，都是基于4种类型的对象来实现（" blob"、" tree"、 " commit" 和" tag"） </font>
+
+* <font color=orange> 3.Git记录了每次提交，每个文件的全部内容（snapshot快照）; </font>
 
 ## 3. 底层原理
 
@@ -25,11 +27,9 @@ Git凭借着优雅的设计、丰富的功能、简单的操作，极高的性�
 
 一个被git管理的项目，在本地的文件夹目录下，会有一个固定的目录格式，我们先从这个目录结构说起，整个文件夹为***工作目录***，.git文件夹为**Git目录**，Git文件之外的**工作目录**；如下图所示；
 
-``` shell
 <img src="images/image-20220711224524701.png" style="zoom:70%;" />
-```
 
-- Git目录
+* Git目录
 
 Git目录是项目存储所有历史和元信息的目录 - 包括所有的对象(***commits,trees,blobs,tags***)，每一个项目只能有一个'Git目录，下面我们来具体看看Git目录中有哪些信息；
 
@@ -39,36 +39,36 @@ Git目录是项目存储所有历史和元信息的目录 - 包括所有的对�
 
 > Git目录中有5个核心文件既文件夹，config，objects，HEAD，index，refs ；
 
-- **config**：
+* **config**：
 
   存储项目配置信息，比如是否以 bare 方式初始化，remote 信息，git remote add 添加的远程分支信息等等；
 
-- **objects**：
+* **objects**：
 
 > 保存git对象，git中的操作以及文件都会以 git 对象形式保存至此，git 对象分为 **blobs，tree，commit** 三种类型，比如 git commit 就是 commit 类型变量，各个版本之间通过版本树进行组织，比如 HEAD 指向某个 commit 对象，而 commit 对象又会指向几个 BLOB 对象或者 tree 对象。objects 文件夹中有很多子文件夹，其中 git 对象保存在以其 sha-1 值的前两位为子文件夹后 38 位为文件名的文件中，此外 git 为了节省存储对象所占用的磁盘空间，会定期对 git 对象进行压缩和打包，其中 pack 文件夹用于存放打包压缩的对象，info 文件夹用于从打包的文件中查找 git 对象；
 
-- **HEAD**：
+* **HEAD**：
 该文件指明了本地的分支结果，如本地分支是 master，那么 HEAD 就指向 master，分支在 refs 中就会表示成`refs:refs/heads/master`
 
-- **index**：
+* **index**：
 该文件 stage 暂存区信息，也就是 add 之后保存到的区域，内容包括它指向的文件的时间戳;
 
-- **refs**：
+* **refs**：
 refs目录下面是一些纯文本文件，分别记录着本地分支和远程分支的***SHA***哈希值。文件的数量取决于分支的数量
 
-- **hooks**：
+* **hooks**：
 这里主要定义了客户端或服务端的 hook 脚本，这些脚本用于在特定命令和操作之前、之后进行特殊处理
 
-- **description**
+* **description**
 ：仅供 GitWeb 程序使用
 
-- **logs**：
+* **logs**：
 记录了本地仓库和远程仓库的每一个分支的提交信息，即所有 commit 对象都会被记录在此，这个文件夹内容应该是我们查看最频繁的，如 git log
 
-- **info**：
+* **info**：
 其中保存了一份不希望在 .gitignore 文件中管理的忽略的全局可执行文件
 
-- **COMMIT_EDITMSG**：
+* **COMMIT_EDITMSG**：
 记录了最后一次提交时的注释信息
 
 ### 3.2. 状态模型
@@ -99,24 +99,24 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 
 **blob：**存储文件数据，就是一个文件；
 
-- 一个"blob对象"就是一块二进制数据，它没有指向任何东西或有任何其它属性；
+* 一个"blob对象"就是一块二进制数据，它没有指向任何东西或有任何其它属性；
 
-- 被Git管理的所有文件，都会生成一个blob文件；
+* 被Git管理的所有文件，都会生成一个blob文件；
 
-- 相同的文件内容，只会存储一个blob对象（SHA值相同）；
+* 相同的文件内容，只会存储一个blob对象（SHA值相同）；
 
 **tree：**可以理解为目录或者集合，用来管理tree或者blob；
 
-- 一个tree对象关联者一串(bunch)blob对象或是其它tree对象的指针;
-- tree对象存储的是指针（tree和blob的SHA哈希值）并不存储真正的对象数据；
+* 一个tree对象关联者一串(bunch)blob对象或是其它tree对象的指针;
+* tree对象存储的是指针（tree和blob的SHA哈希值）并不存储真正的对象数据；
 
 **commit：** 标识某个时间点的状态，内容包括：时间点元数据，提交作者等，一个commit指向一个tree；
 
 > commint对象是我们接触得最频繁的对象，我们一般使用的commit命令（merge，pull、push等等）都直接与commit对象打交道；
 
-- tree对象： 标识者commit对象中涉及的相关tree对象（tree对象最终关联着blod对象，而blod对象由实际文件生成）；
+* tree对象： 标识者commit对象中涉及的相关tree对象（tree对象最终关联着blod对象，而blod对象由实际文件生成）；
 
-- parent：关联的上一次提交的commit对象，commit对象最终可以定位到blod对象，通过blod的SHA1值可以确定文件是否变化；
+* parent：关联的上一次提交的commit对象，commit对象最终可以定位到blod对象，通过blod的SHA1值可以确定文件是否变化；
 
 **tag：** tag用来标记一个提交（commit）的方法；、
 
@@ -126,7 +126,7 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 
 ### 4.1. git安装与配置
 
-- 配置git信息
+* 配置git信息
 
 ``` shell
 git config --global user.name "zhouguo"
@@ -144,17 +144,17 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 
 ### 4.3. 远程仓库clone到本地
 
-- 先在本地新建一个文件夹demo，作为本地代码仓库；
+* 先在本地新建一个文件夹demo，作为本地代码仓库；
 
-- 进入demo文件夹下，单击鼠标右键，选择git bash here，打开git bash终端；
+* 进入demo文件夹下，单击鼠标右键，选择git bash here，打开git bash终端；
 
-- 在git bash终端输入git init命令，初始化本地仓库；
+* 在git bash终端输入git init命令，初始化本地仓库；
 
   ```shell
   git init 
   ```
 
-- 利用git clone url命令，将需要的项目从github上clone下来；
+* 利用git clone url命令，将需要的项目从github上clone下来；
   
   ```shell
   git clone  --url为github中的git地址
@@ -170,19 +170,19 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
   git init 
   ```
 
-- 将代码添加到远程仓库，需要在git上创建一个repository
+* 将代码添加到远程仓库，需要在git上创建一个repository
 
   ```shell
   git remote add origin <url> --https://github.com/mnzhouguo/zgdoc-technology.git
   ```
 
-- 创建main分支
+* 创建main分支
 
   ```shell
   git branch -M main
   ```
 
-- 推送代码推送到远程main分支
+* 推送代码推送到远程main分支
 
   ```shell
   git push -u origin main
@@ -287,6 +287,5 @@ git config --global http.sslVerify "false"
 
 ## 6. 参考文档
 
-<https://blog.csdn.net/qq_37808895/article/details/90733824>
+<!-- <https://blog.csdn.net/qq_37808895/article/details/90733824> -->
 [Git - Git 对象 (git-scm.com)](https://git-scm.com/book/zh/v2/Git-内部原理-Git-对象)
-
