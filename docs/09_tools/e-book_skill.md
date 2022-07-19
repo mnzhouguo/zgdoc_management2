@@ -21,4 +21,4 @@
 
 ### Travis-CI
 
-* <https://www.travis-ci.com/>
+- <https://www.travis-ci.com/>
