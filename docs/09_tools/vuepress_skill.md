@@ -36,4 +36,26 @@ export default defineUserConfig({
 
 ## github国内加速
 
-140.82.112.4
+* 找到github相关域名对于IP,同时找到耗时最小的IP
+  [DNS查询](https://tool.chinaz.com/dns)
+  
+* 将IP域名映射添加到本地hosts文件中
+  `C:\Windows\System32\drivers\etc`
+
+> 对于要经常访问的网站，我们可以通过在hosts中配置域名和IP的映射关系，提高域名解析速度。由于有了映射关系，当我们输入域名计算机就能很快解析出IP，而不用请求网络上的DNS服务器
+
+``` java
+# GitHub Start
+20.205.243.166 github.com
+66.220.149.32 github.global.ssl.fastly.net
+185.199.110.154 github.githubassets.com
+# GitHub End
+```
+
+* 刷新本地DNS
+
+```shell
+ipconfig/flushdns
+```
+
+### 参考资料
