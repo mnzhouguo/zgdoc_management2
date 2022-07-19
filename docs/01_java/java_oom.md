@@ -182,7 +182,7 @@ PS Old Generation
 
 **4、内存管理与内存**
 
-![image-20220624103239744](C:\Users\mnzho\AppData\Roaming\Typora\typora-user-images\image-20220624103239744.png)
+<!-- ![image-20220624103239744](C:\Users\mnzho\AppData\Roaming\Typora\typora-user-images\image-20220624103239744.png) -->
 
 *参数说明：*
 
