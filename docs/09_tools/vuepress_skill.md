@@ -1,14 +1,9 @@
-[[toc]]
 
-生成目录
+# 电子书技巧汇总
 
-# 一级标题
+## 1. MarkDown使用
 
-## 二级标题
-
-# 一级标题
-
-## 行高亮处理
+### 1.1. 行高亮处理
 
 * 行数范围： {5-8}
 * 多个单行： {4,7,9}
@@ -26,15 +21,22 @@ export default defineUserConfig({
 })
 ```
 
-## 在 Markdown 中使用 Vue
+### 1.2. Markdown中使用Vue
 
+``` javascript
+一加一等于： {{ 1 + 1 }}
+
+<span v-for="i in 3"> span: {{ i }} </span>
+```
+
+* 具体效果
 一加一等于： {{ 1 + 1 }}
 
 <span v-for="i in 3"> span: {{ i }} </span>
 
 这是默认主题内置的 `<Badge />` 组件 <Badge text="演示" />
 
-## github国内加速
+## 2. github国内加速
 
 * 找到github相关域名对于IP,同时找到耗时最小的IP
   [DNS查询](https://tool.chinaz.com/dns)
@@ -58,4 +60,6 @@ export default defineUserConfig({
 ipconfig/flushdns
 ```
 
-### 参考资料
+## 3. VSCode技巧
+
+## 4. 参考资料
