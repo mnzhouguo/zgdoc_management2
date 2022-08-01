@@ -23,7 +23,7 @@ Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Li
 
 一个被git管理的项目，在本地的文件夹目录下，会有一个固定的目录格式，我们先从这个目录结构说起，整个文件夹为***工作目录***，.git文件夹为**Git目录**，Git文件之外的**工作目录**；如下图所示；
 
-![图 1](../../image/image-20220711224524701.png")  
+<!-- ![图 1](../../image/image-20220711224524701.png")   -->
 
 - **Git目录**
 
@@ -89,7 +89,7 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 
 **Git中的所有的存储包括4种类型的对象（object），blob ，tree，commit，tag**，这几种对象的逻辑关系如下图所示：
 
-![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\v2-ad80ca99a26a25e8f10aa206cd122aad_720w.jpg)
+<!-- ![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\v2-ad80ca99a26a25e8f10aa206cd122aad_720w.jpg) -->
 
 **blob：**存储文件数据，就是一个文件；
 
@@ -106,7 +106,7 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 
 <!-- <img src="https://git-scm.com/book/en/v2/images/data-model-1.png" alt="简化版的Git数据模型-" style="zoom: 67%;" /> -->
 
-![图 2](https://git-scm.com/book/en/v2/images/data-model-1.png)
+<!-- ![图 2](https://git-scm.com/book/en/v2/images/data-model-1.png) -->
 
 **commit：** 标识某个时间点的状态，内容包括：时间点元数据，提交作者等，一个commit指向一个tree；
 
@@ -141,7 +141,7 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 
 **第一步：使用git bash生成秘钥**
 使用 ssh-keygen -t rsa 命令生成证书文件及密钥(信息中包含你的git用户和邮箱)
-![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\wps2.jpg)
+<!-- ![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\wps2.jpg) -->
 
 **第二步：将密钥加到[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)的setting中SSH Keys中**
 
