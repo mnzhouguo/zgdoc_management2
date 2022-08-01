@@ -29,6 +29,9 @@
 **结论2：**
 > 低代码开发在一定程度上，一定是未来的趋势
 
+**结论3：**
+> 可视化不是低代码的目的，高效率才是
+
 #### 1.2.3. 整体运行逻辑
 
 #### 1.2.4. 关键技术路径
@@ -63,11 +66,15 @@
 
 从难易程度上来看可分为：简单、复杂
 
+![图 2](../../images/b4dfbec68fad70059a100b583b27d65abac3e49fa93d8c0175b957721a379130.png)  
+
  **低代码是一个研发范式的转变**，这句话听上去很振奋人心
 
 ### 2.2. 低代码平台发展路径
 
 MVP期、成熟期、超越期，这三个时期的划分，
+
+从工作流引擎到轻应用低代码平台
 
 ![图 2](../../images/c08f72f5551c84bb93f5c87678855f8c69212f642b2f2e8ebf25d6c8ece224ea.png)  
 
@@ -85,7 +92,11 @@ MVP期、成熟期、超越期，这三个时期的划分，
 
 ![图 4](../../images/eadd72ba41282b102cacf1a988c21bd478f264501d95c169e06461e01d12c54a.png)  
 
+![图 3](../../images/2f85fdc9347326956ba57d71a59499bfc0bac313e6227bfb52d6287ef885a566.png)  
+
 ### 3.2. 功能架构视图
+
+![图 百度爱宜搭平台架构](../../images/84a309d04aece24828ebdc108125f548c07b3ff299f0cc26c2447ff8d638543f.png)  
 
 ## 4. 关键技术要点
 
@@ -107,21 +118,31 @@ apaas平台与低代码的关系；
 
 ### 4.3. 运行态
 
-关于代码的可维护性，我常常说的一句话是：一个 if 一个坑
+关于代码的可维护性，我常常说的一句话是：一个if一个坑
 
-### 4.4. TypeScript
+### 连接器
 
-### 4.5. BPM
+连接器功能，以解决企业数据跨应用流通的难题
 
-### 4.6. FBP
+### 4.7. 可视化逻辑编排
 
-### 4.7. 逻辑编排
+BPM
+
+FBP
+
+通过图形化可视化界⾯，将逻辑代码表达为逻，辑节点与线条，对代码逻辑、业务流程和数据处理逻辑等进⾏编排
+
+![图 1](../../images/915720e41e2e382c1d6eb07a048d38784ec8a3873482685d93bc7a27ba6c2449.png)  
 
 ### 4.8. UI可视化
 
-### 4.9. 数据模型
+### 4.9. 元数据模型
 
 **核心：** 将代码抽象为数据模型，再通过数据模型还原代码，数据模型就是代码编辑器与代码生成器之间的协议规范；
+
+将json配置转换成对应的React组件并在页面上渲染出来
+
+简单来说就是先通过 json 的 type 找到对应的 Component，然后把其他属性作为 props 传递过去完成渲染。
 
 代码：
 
@@ -152,6 +173,48 @@ apaas平台与低代码的关系；
    ],
    value:"hello"
  }
+```
+
+``` json
+{
+  "type": "page",
+  "body": {
+    "title": "",
+    "type": "form",
+    "mode": "horizontal",
+    "body": [
+      {
+        "label": "选项1",
+        "type": "radios",
+        "name": "a",
+        "inline": true,
+        "options": [
+          {
+            "label": "选项A",
+            "value": 1
+          },
+          {
+            "label": "选项B",
+            "value": 2
+          },
+          {
+            "label": "选项C",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "label": "选项2",
+        "type": "select",
+        "size": "sm",
+        "name": "b",
+        "source": "/amis/api/mock2/options/level2?a=${a}",
+        "description": "切换<code>选项1</code>的值，会触发<code>选项2</code>的<code>source</code> 接口重新拉取"
+      }
+    ],
+    "actions": []
+  }
+}
 ```
 
 ## 5. 普及与推广问题
@@ -185,6 +248,15 @@ DooringX
 * 腾讯oteam
 RPA
 
+* 中信
+Awade
+
+* 微软
+Power Platform
+
 [微软 PowerApps](https://www.bilibili.com/video/BV1KQ4y1N7ef?spm_id_from=333.337.search-card.all.click&vd_source=72c007389b5d6fad1158a9dee89efe97)
 
 ![图 2](../../images/d718429a90829354fb01ecc569103f209f29a8d03d9c015f497447472377738b.png)  
+
+[百度 爱速搭整体架构](https://zhuanlan.zhihu.com/p/522822327)
+[低代码平台架构深度剖](https://static001.geekbang.org/con/94/pdf/2570895022/file/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90%20-%20%E6%BD%98%E5%BE%81.pdf)
