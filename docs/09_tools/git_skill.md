@@ -23,13 +23,13 @@ Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Li
 
 一个被git管理的项目，在本地的文件夹目录下，会有一个固定的目录格式，我们先从这个目录结构说起，整个文件夹为***工作目录***，.git文件夹为**Git目录**，Git文件之外的**工作目录**；如下图所示；
 
-<img src="image/image-20220711224524701.png" alt="image-20220711224524701" style="zoom:70%;" />
+![图 1](../../image/image-20220711224524701.png")  
 
 - **Git目录**
 
 Git目录是项目存储所有历史和元信息的目录 - 包括所有的对象(***commits,trees,blobs,tags***)，每一个项目只能有一个'Git目录，下面我们来具体看看Git目录中有哪些信息；
 
-<img src="image/git_catalogue.png" alt="image-20220711225036692" style="zoom:50%;" />
+<!-- <img src="image/git_catalogue.png" alt="image-20220711225036692" style="zoom:50%;" /> -->
 
 > Git目录中有5个核心文件既文件夹，config，objects，HEAD，index，refs ；
 
@@ -69,7 +69,7 @@ refs目录下面是一些纯文本文件，分别记录着本地分支和远程�
 
 下图描述了 git 对象的在不同的生命周期中不同的存储位置，通过不同的 git 命令改变 git 对象的存储生命周期
 
-<img src="git_status.svg" style="zoom:100%;" />
+![图 Git状态模型](git_status.svg)
 
 **工作区 (workspace)**
 就是我们当前工作空间，也就是我们当前能在本地文件夹下面看到的文件结构。初始化工作空间或者工作空间 clean 的时候，文件内容和 index 暂存区是一致的，随着修改，工作区文件在没有 add 到暂存区时候，工作区将和暂存区是不一致的；
@@ -104,15 +104,17 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 - 一个tree对象关联者一串(bunch)blob对象或是其它tree对象的指针;
 - tree对象存储的是指针（tree和blob的SHA哈希值）并不存储真正的对象数据；
 
-<img src="https://git-scm.com/book/en/v2/images/data-model-1.png" alt="简化版的Git数据模型-" style="zoom: 67%;" />
+<!-- <img src="https://git-scm.com/book/en/v2/images/data-model-1.png" alt="简化版的Git数据模型-" style="zoom: 67%;" /> -->
+
+![图 2](https://git-scm.com/book/en/v2/images/data-model-1.png)
 
 **commit：** 标识某个时间点的状态，内容包括：时间点元数据，提交作者等，一个commit指向一个tree；
 
 > commint对象是我们接触得最频繁的对象，我们一般使用的commit命令（merge，pull、push等等）都直接与commit对象打交道；
 
-<img src="D:\code\doc\zgdoc-technology\documents\03_tools\image\v2-776e0f4bccbdf01aa5a6a4af605ceb94_720w.jpg" style="zoom: 67%;" />
+<!-- <img src="D:\code\doc\zgdoc-technology\documents\03_tools\image\v2-776e0f4bccbdf01aa5a6a4af605ceb94_720w.jpg" style="zoom: 67%;" />
 
-![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\data-model-3.png)
+![img](D:\code\doc\zgdoc-technology\documents\03_tools\image\data-model-3.png) -->
 
 - tree对象： 标识者commit对象中涉及的相关tree对象（tree对象最终关联着blod对象，而blod对象由实际文件生成）；
 
