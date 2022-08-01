@@ -1,30 +1,6 @@
 **目录结构**
 [[toc]]
 
-- [1. 概述](#1-概述)
-- [2. 核心概念](#2-核心概念)
-- [3. 底层原理](#3-底层原理)
-  - [3.1. 目录结构](#31-目录结构)
-  - [3.2. 状态模型](#32-状态模型)
-  - [3.3. 存储模型](#33-存储模型)
-  - [3.4. 分支管理](#34-分支管理)
-- [4. 使用实践](#4-使用实践)
-  - [4.1. git安装与配置](#41-git安装与配置)
-  - [4.2. SSH远程访问](#42-ssh远程访问)
-  - [4.3. 远程仓库clone到本地](#43-远程仓库clone到本地)
-  - [4.4. 本地仓库提交到GitHub](#44-本地仓库提交到github)
-  - [4.5. 常用命令](#45-常用命令)
-  - [4.6. 获取远程更新](#46-获取远程更新)
-  - [4.7. 基于master创建新分支](#47-基于master创建新分支)
-- [5. 常见问题](#5-常见问题)
-  - [5.1. git Failed to connect to github.com port 443](#51-git-failed-to-connect-to-githubcom-port-443)
-  - [5.2. error: src refspec main does not match any](#52-error-src-refspec-main-does-not-match-any)
-  - [5.3. error: failed to push some refs to <url>](#53-error-failed-to-push-some-refs-to-url)
-  - [5.4. OpenSSL SSL_read: Connection was reset, errno 10054](#54-openssl-ssl_read-connection-was-reset-errno-10054)
-  - [5.5. fatal: Couldn't find remote ref master](#55-fatal-couldnt-find-remote-ref-master)
-  - [Another git process seems to be running in this repository](#another-git-process-seems-to-be-running-in-this-repository)
-- [6. 参考文档](#6-参考文档)
-
 ## 1. 概述
 
 Git作为一个版本管理工具，我们只要听到它是由Linus Torvalds(Linux内核的最早作者)开发设计的，就对它肃然起敬了，在同类工具中算是一骑绝尘，Git凭借着优雅的设计、丰富的功能、简单的操作，极高的性能，力压其他工具成为市场占有率最高的工具，也是程序员群体必备的、使用最频繁的工具；
@@ -182,7 +158,7 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 - 利用git clone url命令，将需要的项目从github上clone下来；
   
   ```shell
-  git clone <url>  --url为github中的git地址
+  git clone  --url为github中的git地址
   ```
 
 ### 4.4. 本地仓库提交到GitHub
@@ -198,7 +174,7 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 - 将代码添加到远程仓库，需要在git上创建一个repository
 
   ```shell
-  git remote add origin <url> --https://github.com/mnzhouguo/zgdoc-technology.git
+  git remote add origin --https://github.com/mnzhouguo/zgdoc-technology.git
   ```
 
 - 创建main分支
@@ -233,8 +209,8 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
   git commit -a -m 
 
   git restore 
-  # (use "git add/rm <file>..." to update what will be committed)
-  # (use "git restore <file>..." to discard changes in working directory)
+  # (use "git add/rm ..." to update what will be committed)
+  # (use "git restore ..." to discard changes in working directory)
 
   ```
 
@@ -281,13 +257,13 @@ git pull
 
 ### 5.2. error: src refspec main does not match any
 
-### 5.3. error: failed to push some refs to <url>
+### 5.3. error: failed to push some refs to
 
 **产生原因：**
 
 When multiple developers work on the same branch, it can cause a sequencing issue in Git. A commit gets rejected and causes a failed to push some refs to error because the remote branch contains code that you do not have locally. What this means is that your local git repository is not compatible with the remote origin.
 
- >参考： <https://komodor.com/learn/how-to-fix-failed-to-push-some-refs-to-git-errors/#:~:text=failed%20to%20push%20some%20refs%20to%20errors%20are%20often%20caused,sync%20with%20the%20Git%20repository>.
+ [解决办法](https://komodor.com/learn/how-to-fix-failed-to-push-some-refs-to-git-errors/#:~:text=failed%20to%20push%20some%20refs%20to%20errors%20are%20often%20caused,sync%20with%20the%20Git%20repository)
 
 ### 5.4. OpenSSL SSL_read: Connection was reset, errno 10054
 
@@ -312,5 +288,5 @@ git config --global http.sslVerify "false"
 
 ## 6. 参考文档
 
-<https://blog.csdn.net/qq_37808895/article/details/90733824>
-[Git - Git 对象 (git-scm.com)](https://git-scm.com/book/zh/v2/Git-内部原理-Git-对象)
+[Git连接GitHub](https://blog.csdn.net/qq_37808895/article/details/90733824)
+[Git对象(git-scm.com)](https://git-scm.com/book/zh/v2/Git-内部原理-Git-对象)
