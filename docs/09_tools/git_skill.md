@@ -132,10 +132,10 @@ git 是分布式版本控制系统，和其他版本控制系统不同的是他�
 
 - 配置git信息
 
-``` shell
-git config --global user.name "zhouguo"
-git config --global user.email ["378046832@qq.com"](mailto:\)
-```
+ ``` shell
+  git config --global user.name "zhouguo"
+  git config --global user.email ["378046832@qq.com"](mailto:\)
+ ```
 
 ### 4.2. SSH远程访问
 
@@ -156,20 +156,20 @@ git config --global user.email ["378046832@qq.com"](mailto:\)
 - 在git bash终端输入git init命令，初始化本地仓库；
 
   ```shell
-  git init 
+   git init 
   ```
 
 - 利用git clone url命令，将需要的项目从github上clone下来；
   
   ```shell
-  git clone  --url为github中的git地址
+  git clone  --url 为github中的git地址
   ```
 
 ### 4.4. 本地仓库提交到GitHub
 
 初始化本地仓库，把代码的文件夹变成一个仓库，使用`git init`命令，在本地文件夹下，右键打开git bash终端，初始化完成之后，本地文件夹下会生成.git文件；
 
-注意：提交到远程仓库之前，要确保工作区中的代码提交到了本地
+- 注意：提交到远程仓库之前，要确保工作区中的代码提交到了本地
 
   ```shell
   git init 
