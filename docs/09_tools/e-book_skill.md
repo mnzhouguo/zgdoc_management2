@@ -86,4 +86,4 @@ ipconfig/flushdns
 
 ## 4. 参考资料
 
-- <https://www.travis-ci.com/>
+- [travis](https://www.travis-ci.com/)
