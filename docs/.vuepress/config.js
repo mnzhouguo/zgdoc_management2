@@ -42,6 +42,7 @@ module.exports = {
       { text: '首页', link: '/', collapsible: true, },
       { text: 'Java体系', link: "/01_java/", collapsible: true, children: ['/01_java/java_oom.md',] },
       { text: '架构', link: "/06_architecture/", collapsible: true, children: ['/06_architecture/LowCode.md',] },
+      { text: '产品', link: "/05_product/", collapsible: true, children: ['/05_product/鸿蒙教育产品规划.md',] },
       { text: '工具集合', link: "/09_tools/", collapsible: true, children: ['/09_tools/git_skill.md',] },
     ],
     sidebarDepth: 2,
