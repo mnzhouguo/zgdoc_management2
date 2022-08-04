@@ -257,6 +257,13 @@ Awade
 * 微软
 Power Platform
 
+* Jeecg
+[JEECG官方网站 - 基于BPM的低代码开发平](http://www.jeecg.com/)
+
+* 若依
+[RuoYi 若依官方网站](http://www.ruoyi.vip/)
+  
+* 微软 PowerApps
 [微软 PowerApps](https://www.bilibili.com/video/BV1KQ4y1N7ef?spm_id_from=333.337.search-card.all.click&vd_source=72c007389b5d6fad1158a9dee89efe97)
 
 ![图 2](../../images/d718429a90829354fb01ecc569103f209f29a8d03d9c015f497447472377738b.png)  
