@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-3f534a56","path":"/04_ai/ai_base.html","title":"\u6E05\u7A7A\u6D4B\u8BD5","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1659596776000,"contributors":[{"name":"zhouguo","email":"378046836@qq.com","commits":1}]},"filePathRelative":"04_ai/ai_base.md"}');export{a as data};
