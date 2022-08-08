@@ -32,3 +32,6 @@ yarn-error.log*
 temp
 
 /docs/09_tools/.$git_status.svg.bkp
+/docs/05_product/drawio/.$鸿蒙教育产品整体架构规划.drawio.svg.bkp
+/docs/05_product/drawio/.$鸿蒙教育产品整体架构规划.drawio.bkp
+/docs/05_product/鸿蒙教育产品规划.md
