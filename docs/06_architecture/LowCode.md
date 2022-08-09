@@ -274,5 +274,3 @@ Power Platform
 
 [百度 爱速搭整体架构](https://zhuanlan.zhihu.com/p/522822327)
 [低代码平台架构深度剖](https://static001.geekbang.org/con/94/pdf/2570895022/file/%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90%20-%20%E6%BD%98%E5%BE%81.pdf)
-
-
