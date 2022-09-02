@@ -1,0 +1,118 @@
+<mxfile host="65bd71144e">
+    <diagram id="xT6pFtwLiGiTjBDU47YP" name="第 1 页">
+        <mxGraphModel dx="1003" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-2" value="省市、区域建设的教育平台" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;shadow=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;" parent="1" source="kojmYiY_IoEMQFduKIUS-7" target="G3k3rQtNmexxS5RkvfvI-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="520" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-5" value="用户登录入口" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G3k3rQtNmexxS5RkvfvI-4" vertex="1" connectable="0">
+                    <mxGeometry x="0.1972" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-8" value="问题？网络学习空间的登录入口" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipH=1;flipV=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="640" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-10" value="第三方应用厂家的应用，要对接咱们的话是一个什么流程？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipH=1;flipV=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="750" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-11" value="目前系统每天的登录用户大概有多少？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipH=1;flipV=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="713" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-12" value="目前的第三方的应用与自己的应用大概是多少？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipH=1;flipV=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="677" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-17" value="学校、自己维护其他&lt;br&gt;相关其他的数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="G3k3rQtNmexxS5RkvfvI-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="790" y="660" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="G3k3rQtNmexxS5RkvfvI-18" target="G3k3rQtNmexxS5RkvfvI-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-20" value="单点登录" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G3k3rQtNmexxS5RkvfvI-19" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0795" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G3k3rQtNmexxS5RkvfvI-18" value="第三方应用系统" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="984" y="460" width="116" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="kojmYiY_IoEMQFduKIUS-1" target="G3k3rQtNmexxS5RkvfvI-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-1" value="全国教育可信身份系统（&lt;span style=&quot;background-color: rgb(34, 39, 46); color: rgb(173, 186, 199); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;学有优教&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="361" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-7" value="登录用户" style="sketch=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="490" width="59" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="kojmYiY_IoEMQFduKIUS-8" target="kojmYiY_IoEMQFduKIUS-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-8" value="全国学籍系统基础数据" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kojmYiY_IoEMQFduKIUS-10" target="kojmYiY_IoEMQFduKIUS-8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-12" value="学校进行基础信息维护&lt;br&gt;靠政策驱动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kojmYiY_IoEMQFduKIUS-11" vertex="1" connectable="0">
+                    <mxGeometry x="0.1165" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-10" value="学校" style="sketch=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="230" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-14" value="学校管理员" style="sketch=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="660" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-17" value="认证授权" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kojmYiY_IoEMQFduKIUS-15" target="G3k3rQtNmexxS5RkvfvI-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="920" y="565"/>
+                            <mxPoint x="920" y="520"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-15" value="硬件认证模式" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="984" y="540" width="116" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="kojmYiY_IoEMQFduKIUS-18" target="kojmYiY_IoEMQFduKIUS-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="860" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-18" value="硬件认证模式" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="989" y="366" width="106" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kojmYiY_IoEMQFduKIUS-19" target="kojmYiY_IoEMQFduKIUS-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-22" value="可参看、维护学籍信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kojmYiY_IoEMQFduKIUS-20" vertex="1" connectable="0">
+                    <mxGeometry x="0.109" y="-4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kojmYiY_IoEMQFduKIUS-19" value="家长+学生" style="sketch=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="361" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="l-Y4hWKoYYoWmdVS6D91-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l-Y4hWKoYYoWmdVS6D91-1" target="kojmYiY_IoEMQFduKIUS-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="l-Y4hWKoYYoWmdVS6D91-1" value="第三方应用系统" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="290" width="110" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
